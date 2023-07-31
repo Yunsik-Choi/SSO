@@ -11,17 +11,19 @@ body:
       label: Domain
       description: 어떤 Domain에 관련된 Issue입니까?
       options:
-        - SSO
-        - Payment
+        - Frontend
+        - Backend
+        - Documentation
+        - Deployment
         - ETC
     validations:
       required: true
   - type: textarea
     id: what-need
     attributes:
-      label: 어떠한 기능이 필요한가요?
-      description: 어떠한 기능이 필요한가요?
-      placeholder: 어떠한 기능이 필요한가요!
+      label: 어떠한 작업을 진행하실 건가요?
+      description: 어떠한 작업을 진행하실 건가요?
+      placeholder: 어떠한 작업을 진행하실 건가요?
       value: "Projects Card도 생성해주세요!"
     validations:
       required: true
@@ -30,13 +32,6 @@ body:
     attributes:
       label: 고려사항
       description: 개발시 고려해야 할 사항
-  - type: textarea
-    id: todoList
-    attributes:
-      label: 할일목록
-      description: 할일목록을 작성해주세요!
-      placeholder: 할일목록을 작성해주세요!
-      value: "- [ ] TODO"
   - type: checkboxes
     id: priority
     attributes:

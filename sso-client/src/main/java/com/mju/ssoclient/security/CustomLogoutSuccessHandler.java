@@ -30,6 +30,7 @@ public class CustomLogoutSuccessHandler implements LogoutSuccessHandler {
 			for (Cookie cookie : cookies) {
 				cookie.setValue("");
 				cookie.setPath("/");
+				cookie.setDomain("");
 				cookie.setMaxAge(0);
 				response.addCookie(cookie);
 			}

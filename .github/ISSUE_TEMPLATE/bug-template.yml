@@ -3,8 +3,7 @@ description: "Thank you for reporting a bug!"
 body:
   - type: markdown
     attributes:
-      value: |
-        버그 레포트
+      value: 버그 레포트
   - type: input
     id: contact
     attributes:
